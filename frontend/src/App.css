@@ -71,6 +71,12 @@ button:disabled {
   position: relative;
 }
 
+.result button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
 .result pre {
   white-space: pre-wrap;
   word-break: break-word;
