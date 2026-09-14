@@ -1,0 +1,305 @@
+{
+    "auctionPeriod": {
+        "startDate": "2026-09-14T12:38:45.843Z"
+    },
+    "sellingMethod": "basicSell-multiAwards-fast",
+    "sellingEntity": {
+        "identifier": {
+            "id": "01078131",
+            "legalName": {
+                "uk_UA": "ТзОВ Шарашкіна Контора"
+            },
+            "scheme": "UA-EDR"
+        },
+        "address": {
+            "streetAddress": {
+                "uk_UA": "ВУЛИЦЯ АКАДЕМІКА САХАРОВА, будинок 34"
+            },
+            "locality": {
+                "uk_UA": "Івано-Франківськ,"
+            },
+            "region": {
+                "uk_UA": "Вінницька область"
+            },
+            "countryName": {
+                "uk_UA": "Україна"
+            },
+            "postalCode": "76014"
+        },
+        "contactPoint": {
+            "name": {
+                "uk_UA": "Зеленська Тетяна Іванівна"
+            },
+            "telephone": "+380977777777",
+            "faxNumber": "+380977777777",
+            "email": "zempro@if.ukrtel.net"
+        },
+        "representativeInfo": "Довіреність № 123 від 22.02.2012, дійсна до 30.03.2012"
+    },
+    "lotId": "Номер лота 1234567890",
+    "title": {
+        "uk_UA": "Аукціон commercialPropertyLease-priorityEnglish"
+    },
+    "description": {
+        "uk_UA": "Опис аукціону commercialPropertyLease-priorityEnglish"
+    },
+    "accessDetails": {
+        "uk_UA": "Порядок та можливий час ознайомлення з лотом",
+        "en_US": "string"
+    },
+    "minNumberOfQualifiedBids": 1,
+    "bankAccounts": [
+        {
+            "accountType": "registrationFee",
+            "accounts": [
+                {
+                    "bankName": {
+                        "uk_UA": "ПростоБанк"
+                    },
+                    "description": {
+                        "uk_UA": "Банківські рахунки для реєстраційного внеску ГРН"
+                    },
+                    "accountIdentifications": [
+                        {
+                            "id": "UA123456789012345678908765432",
+                            "scheme": "UA-IBAN"
+                        }
+                    ],
+                    "paymentPurpose": {
+                        "uk_UA": "Призначення платежу",
+                        "en_US": "Payment purpose"
+                    },
+                    "currency": "UAH",
+                    "accountHolder": {
+                        "identifier": {
+                            "id": "12312312",
+                            "scheme": "UA-EDR",
+                            "legalName": {
+                                "uk_UA": "Ідентифікатор одержувача"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "accountType": "guarantee",
+            "accounts": [
+                {
+                    "bankName": {
+                        "uk_UA": "ПростоБанк"
+                    },
+                    "description": {
+                        "uk_UA": "Банківські рахунки для гарантійного внеску ГРН"
+                    },
+                    "accountIdentifications": [
+                        {
+                            "id": "UA123456789012345678908765432",
+                            "scheme": "UA-IBAN"
+                        }
+                    ],
+                    "paymentPurpose": {
+                        "uk_UA": "Призначення платежу",
+                        "en_US": "Payment purpose"
+                    },
+                    "currency": "UAH",
+                    "accountHolder": {
+                        "identifier": {
+                            "id": "12312312",
+                            "scheme": "UA-EDR",
+                            "legalName": {
+                                "uk_UA": "Ідентифікатор одержувача"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "accountType": "other",
+            "accounts": [
+                {
+                    "bankName": {
+                        "uk_UA": "ПростоБанк"
+                    },
+                    "description": {
+                        "uk_UA": "Банківські рахунки для гарантійного внеску ГРН"
+                    },
+                    "accountIdentifications": [
+                        {
+                            "id": "UA123456789012345678908765432",
+                            "scheme": "UA-IBAN"
+                        }
+                    ],
+                    "paymentPurpose": {
+                        "uk_UA": "Призначення платежу",
+                        "en_US": "Payment purpose"
+                    },
+                    "currency": "UAH",
+                    "accountHolder": {
+                        "identifier": {
+                            "id": "12312312",
+                            "scheme": "UA-EDR",
+                            "legalName": {
+                                "uk_UA": "Ідентифікатор одержувача"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "accountType": "payment",
+            "accounts": [
+                {
+                    "bankName": {
+                        "uk_UA": "ПростоБанк"
+                    },
+                    "description": {
+                        "uk_UA": "Банківські рахунки для гарантійного внеску ГРН"
+                    },
+                    "accountIdentifications": [
+                        {
+                            "id": "UA123456789012345678908765432",
+                            "scheme": "UA-IBAN"
+                        }
+                    ],
+                    "paymentPurpose": {
+                        "uk_UA": "Призначення платежу",
+                        "en_US": "Payment purpose"
+                    },
+                    "currency": "UAH",
+                    "accountHolder": {
+                        "identifier": {
+                            "id": "12312312",
+                            "scheme": "UA-EDR",
+                            "legalName": {
+                                "uk_UA": "Ідентифікатор одержувача"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "x_additionalInformation": {
+        "uk_UA": "Додаткові відомості"
+    },
+    "x_documentRequirements": {
+        "uk_UA": "Перелік та вимоги до оформлення документів"
+    },
+    "value": {
+        "currency": "UAH",
+        "amount": 10000,
+        "valueAddedTaxIncluded": true
+    },
+    "minimalPart": 1,
+    "minimalStep": {
+        "currency": "UAH",
+        "amount": 100
+    },
+    "guarantee": {
+        "currency": "UAH",
+        "amount": 20000
+    },
+    "registrationFee": {
+        "currency": "UAH",
+        "amount": 300
+    },
+    "tenderAttempts": 1,
+    "items": [
+        {
+            "description": {
+                "uk_UA": "03000000-1 Сільськогосподарська, фермерська продукція, продукція рибальства, лісівництва та супутня продукція та всі вкладені коди",
+                "en_US": "string"
+            },
+            "classification": {
+                "scheme": "CAV",
+                "id": "03000000-1"
+            },
+            "location": {
+                "latitude": "49.839684",
+                "longitude": "24.029716",
+                "elevation": "14.345324"
+            },
+            "address": {
+                "addressID": {
+                    "id": "4600000000",
+                    "scheme": "koatuu"
+                },
+                "streetAddress": {
+                    "uk_UA": "вул.Оренда, 101"
+                },
+                "locality": {
+                    "uk_UA": "Львів"
+                },
+                "region": {
+                    "uk_UA": "Львівська область"
+                },
+                "postalCode": "00000",
+                "countryName": {
+                    "uk_UA": "Україна"
+                }
+            },
+            "unit": {
+                "code": "BX"
+            },
+            "quantity": 55,
+            "registrationDetails": {
+                "registrationStatus": "properlyRegistered",
+                "registrationID": "1234554321",
+                "registrationDate": "2022-03-10T13:27:11.433000Z"
+            }
+        }
+    ],
+    "documents": [
+        {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImRzIn0.eyJpZCI6ImM2Y2UyNDY2ZDg4MTQwNzc5NDk4YTk4ZTllMzU2YzczIiwic2NvcGUiOiJwdWJsaWMiLCJmaWxlbmFtZSI6IjEuZG9jeCIsImRvY3VtZW50VHlwZSI6ImNvbnRyYWN0UHJvZm9ybWEiLCJmb3JtYXQiOiJhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtb2ZmaWNlZG9jdW1lbnQud29yZHByb2Nlc3NpbmdtbC5kb2N1bWVudCIsInNoYSI6IjQzYmI3OTI3MmQ3NjU5MjFhODZjODNhMThkNDAyZGVjMWU1ZTE0NmJkMTA2ZjYxYWFlMDcyZDZiNzNjNmRhYTQiLCJoYXNoIjoibWQ1OjM3OGY5MjI0NmVkZGMxNWE4MjA0MzRjNDBiYWYyMDJmIiwiZGF0ZUNyZWF0ZWQiOiIyMDI2LTA3LTMxIDEyOjQxOjE5LjI4NDA4MyIsInNpemUiOiIxMDI1OSIsImlhdCI6MTc4NTUwMTY3OX0.qYtHUGmgihQjZauDbEgzYg7LoJRchbWcsWR9wB7njdvoLhPeKXVFm-RzDr01DAy75Xj17c-lJd8yYiek_iW_qppBqaNoAsL_L7CHHyWENcg6x_qEpGX7pXl_VoeTtLjRgofULA9s4KZiVtoPcEWXLWAu7nnp9DxlkHyblm413TB6ebdYLZAAAXx3_1NZ38jLDoLw67KpjUbi-X6a79WthTXH6-Wy9rxYlOulg0f_Qfwj5SgMzQwQMUKwAr8Vfm6o4yXe9FYrIrf_5gpUHMsbQl2zCv08nrADLu1UVDelT8R-xRmS2WK7nEI6MNzJUJGzqsAwokfHLTYAxVhH9zcQC9znjxYXFqVI0e6GHmsmXTNVc2JO1Kwfs1Mjmb01KBVAWG3A_umeYmb2va8pJkRRFUFW5B9tDIFNxHfwb0hilFtkVR3hCQ6-jae8IPS1uYxklvneOd2OGgqZGl4iyPQ3jBE8monydWah3GN1tahZkhV5VX5xz5eCLo1c_bLDPSgR0gWi_9WTlSyETfR0lAbH3glwgJFzaty70avi_Z8b8i3PsPK3lV2IVrc0ay_YSNBbVJOOCy-5-dpEHdIdXpXOKn8hiwrJdPRRYnYNkhtBbpIx_u8PIW3fE1Cam07kPjRb3mKRURSWBVz6wyWCWxd6HH9ysHTyP1r70hyUAwllFlA",
+            "title": {
+                "uk_UA": "contractProforma",
+                "en_US": "Title"
+            },
+            "description": {
+                "uk_UA": "contractProforma",
+                "en_US": "Description"
+            },
+            "documentOf": "auction",
+            "documentType": "notice",
+            "index": 33,
+            "format": "string",
+            "language": 0
+        },
+        {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImRzIn0.eyJpZCI6IjhiZDE1YjVhOGJjYzRlMjM5OGYyMDgxZjE0MmYwM2MxIiwic2NvcGUiOiJwdWJsaWMiLCJmaWxlbmFtZSI6InNhbXBsZSAoMSkuanBnIiwiZG9jdW1lbnRUeXBlIjoiaWxsdXN0cmF0aW9uIiwiZm9ybWF0IjoiaW1hZ2UvanBlZyIsInNoYSI6ImNiMzE1N2RhYTIzNTdhY2IzNzMxOGYzMDI5ZGQwNzhmOWRjYmUxOGYzMjE2MDYyNGUxNDFhMTgxODdhNWZjZDUiLCJoYXNoIjoibWQ1OmU1MTk5ODViMzNiYzZmMTcwZjVlYmNjOGUyNDdiMDEwIiwiZGF0ZUNyZWF0ZWQiOiIyMDI2LTA3LTMxIDEyOjQ3OjA2LjQ4MTMzMyIsInNpemUiOiI1MDAwMDAwMCIsImlhdCI6MTc4NTUwMjAyN30.JSeM5o_tTnK3gg4QAPDxwGBbHDmTpBluIzN-pSECu5Fohp_ehHiNEzvikOKjIraHVqa1NgfHec6viX2_1PfakHtIlrjTSIXr10pts4VVbzYO4RQ6v6eRrfORPqCKUI59pOgbHZS9-mzSCkOBNe_o2GgaILHcYsR1Ic152QfDtdfLwNGPo-uLt6iLiBZGdmwslmJBeh3RWdE15jmnJWIYdJbDeeczdR0SCkenQAmdx4XmxfDVLpxsJAwZLn3FmX_3KxKCjwYPawnVtgB3JQ79DqdALhzkxgwxYrQ1Fce9_Br0UTBJf5jkHABOJvmDdHTAPmV7b_OtdJ0R5XYQsie0ktO0w98zNHZBh7h2IK9Qs5eaW4bEtokASK1woON3VpwnIhxTxWygJEpMEcOkCWS2-NdQ5b8OkWdHyQNFBIjhJU1UEYikA6cv1riHiwGuU2jIVUGvTO1RsBBbPhFpfE9KEvmPmnD6rPD_rFoHNgpLgW1U_cK3YVsTlUO75L1DRSpK8ZHhrQh86OCJ74ceZjlDPG7GVzKKCW7T2aoC1Gwa3S0IgrAFB6JTcSt5u96p8WRewxZzvhwSfkKYR_4CSD13qGpLOEJ4ij5EbDBDZ_AA3QlH4CM7HVd53V-26Mfq2VpegvKkRrzHQTLBAlM8qzhKtgdvBZZjI_YlA52CuCDwgEE",
+            "title": {
+                "uk_UA": "illustration",
+                "en_US": "Title"
+            },
+            "description": {
+                "uk_UA": "illustration",
+                "en_US": "Description"
+            },
+            "documentOf": "auction",
+            "documentType": "illustration",
+            "index": -1,
+            "format": "string",
+            "language": 0
+        },
+        {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImRzIn0.eyJpZCI6IjZjZTQ0M2IyNjgxMjQyOWI4NmVkMGExYTAzNzBjMmI4Iiwic2NvcGUiOiJwdWJsaWMiLCJmaWxlbmFtZSI6IjEuZG9jeCIsImRvY3VtZW50VHlwZSI6InRlY2huaWNhbFNwZWNpZmljYXRpb25zIiwiZm9ybWF0IjoiYXBwbGljYXRpb24vdm5kLm9wZW54bWxmb3JtYXRzLW9mZmljZWRvY3VtZW50LndvcmRwcm9jZXNzaW5nbWwuZG9jdW1lbnQiLCJzaGEiOiI0M2JiNzkyNzJkNzY1OTIxYTg2YzgzYTE4ZDQwMmRlYzFlNWUxNDZiZDEwNmY2MWFhZTA3MmQ2YjczYzZkYWE0IiwiaGFzaCI6Im1kNTozNzhmOTIyNDZlZGRjMTVhODIwNDM0YzQwYmFmMjAyZiIsImRhdGVDcmVhdGVkIjoiMjAyNi0wOS0xNCAxMjoyOTo1MC45NzgxODQiLCJzaXplIjoiMTAyNTkiLCJpYXQiOjE3ODkzODg5OTF9.YRZS1rWLucDr3X8FaNeoi2SM0HSECdJDPeS_3713UczUmgG5Ay5PawPbQfdR8Vr9V1c81NyRTcRjGFZXDQxW3z96MO1_A7vmEIIck-y8s8I9U5EkXwGvUpP0v6w93T30GyI6nb009v4vjhP-7dLz5Nqar9LyKGZGzyHt_5--9WxafY9b87k7HVB2uj0N0Vz1B3j5UkiUSKuyh17NPa1-f9nBBTVUZfydfEwoZwASSjudwlp0iWbUCAJKYeHBiXDRpKVuZepXl2-y2GrnB8WswhJCt5y9u22u77XbDyD6PDfErPL8ICWfvXj3wOiuxfZl6Rucy28QIRrn4SAskKjN1-e1ioeD92ae4ApJEqE37Qq9TR59L2aMlen5Dwmwv4ZJjC4DOaFBVBgnnR8Z-UD3fcP_Q-kiMv3i1pcaOwSHwk5bcBXnfxCXXa123eHbmEmqQg8QWsOWAoeOwXDKqqVA7-tECFW-PBe87isqf8zYc1YDZ0dtLAgjAedMoOomrOe2QVH4jEuyv2Ua72TS4cYiX5bLoFU01d0WnTFv7sYzZItbp1d8rcOdTDBTmPr-a7wMjs6y3JMo0Qo5J2wUokLo8bzf8YmSnuQ4dMhXChIdrjT0wJFhHY97luecxrKskGe9M8XwYy3ui02JB3F57917maAHagVCEDDVhLfFUbnn4WM",
+            "title": {
+                "uk_UA": "technicalSpecifications",
+                "en_US": "Title"
+            },
+            "description": {
+                "uk_UA": "technicalSpecifications2",
+                "en_US": "Description"
+            },
+            "documentOf": "auction",
+            "documentType": "illustration",
+            "index": 0,
+            "format": "string",
+            "language": 0
+        }
+    ]
+}
