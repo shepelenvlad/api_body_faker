@@ -1,10 +1,10 @@
 {
-  "title": "Basic Sell — Multi Awards Fast",
-  "description": "Лот продажу з можливістю кількох переможців (basicSell-multiAwards-fast)",
+  "title": "Bankruptcy — Dutch Fast",
+  "description": "Лот продажу активів у справі про банкрутство (bankRuptcy-dutch-fast)",
   "type": "object",
   "properties": {
     "sellingMethod": {
-      "const": "basicSell-multiAwards-fast"
+      "const": "bankRuptcy-dutch-fast"
     },
     "auctionPeriod": {
       "type": "object",
@@ -28,7 +28,7 @@
           "type": "object",
           "properties": {
             "id": {
-              "example": "01078131"
+              "example": "12345678"
             },
             "legalName": {
               "type": "object",
@@ -53,13 +53,24 @@
         "address": {
           "type": "object",
           "properties": {
+            "addressID": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "4600000000"
+                },
+                "scheme": {
+                  "const": "koatuu"
+                }
+              }
+            },
             "streetAddress": {
               "type": "object",
               "properties": {
                 "uk_UA": {
                   "type": "string",
                   "minLength": 10,
-                  "maxLength": 50
+                  "maxLength": 60
                 }
               }
             },
@@ -152,9 +163,190 @@
             }
           }
         },
-        "representativeInfo": {
+        "representativeCertificateNumber": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9999
+        },
+        "representativeCertificateDate": {
           "type": "string",
-          "minLength": 15,
+          "format": "date-time"
+        }
+      }
+    },
+    "bankruptcyCaseNumber": {
+      "type": "object",
+      "properties": {
+        "uk_UA": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 60
+        }
+      }
+    },
+    "economicCourtName": {
+      "type": "object",
+      "properties": {
+        "uk_UA": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 80
+        }
+      }
+    },
+    "debtorInformation": {
+      "type": "object",
+      "properties": {
+        "identifier": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "87654321"
+            },
+            "legalName": {
+              "type": "object",
+              "properties": {
+                "uk_UA": {
+                  "type": "string",
+                  "minLength": 10,
+                  "maxLength": 150
+                }
+              }
+            },
+            "scheme": {
+              "const": "UA-EDR"
+            }
+          },
+          "required": [
+            "id",
+            "legalName",
+            "scheme"
+          ]
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "addressID": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "4600000000"
+                },
+                "scheme": {
+                  "const": "koatuu"
+                }
+              }
+            },
+            "streetAddress": {
+              "type": "object",
+              "properties": {
+                "uk_UA": {
+                  "type": "string",
+                  "minLength": 10,
+                  "maxLength": 60
+                }
+              }
+            },
+            "locality": {
+              "type": "object",
+              "properties": {
+                "uk_UA": {
+                  "type": "string",
+                  "minLength": 3,
+                  "maxLength": 30
+                }
+              }
+            },
+            "region": {
+              "type": "object",
+              "properties": {
+                "uk_UA": {
+                  "type": "string",
+                  "enum": [
+                    "Автономна Республіка Крим",
+                    "Вінницька область",
+                    "Волинська область",
+                    "Дніпропетровська область",
+                    "Донецька область",
+                    "Житомирська область",
+                    "Закарпатська область",
+                    "Запорізька область",
+                    "Івано-Франківська область",
+                    "Київська область",
+                    "Київ",
+                    "Кіровоградська область",
+                    "Луганська область",
+                    "Львівська область",
+                    "Миколаївська область",
+                    "Одеська область",
+                    "Полтавська область",
+                    "Рівненська область",
+                    "Севастополь",
+                    "Сумська область",
+                    "Тернопільська область",
+                    "Харківська область",
+                    "Херсонська область",
+                    "Хмельницька область",
+                    "Черкаська область",
+                    "Чернівецька область",
+                    "Чернігівська область"
+                  ]
+                }
+              }
+            },
+            "postalCode": {
+              "type": "string",
+              "minLength": 5,
+              "maxLength": 5
+            },
+            "countryName": {
+              "type": "object",
+              "properties": {
+                "uk_UA": {
+                  "const": "Україна"
+                }
+              }
+            }
+          }
+        },
+        "contactPoint": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "object",
+              "properties": {
+                "uk_UA": {
+                  "type": "string",
+                  "minLength": 3,
+                  "maxLength": 40
+                }
+              }
+            },
+            "telephone": {
+              "type": "string",
+              "format": "phone"
+            },
+            "faxNumber": {
+              "type": "string",
+              "format": "phone"
+            },
+            "email": {
+              "type": "string",
+              "format": "email"
+            }
+          }
+        }
+      }
+    },
+    "isTaxInvoiceProvided": {
+      "type": "boolean"
+    },
+    "restrictions": {
+      "type": "object",
+      "properties": {
+        "uk_UA": {
+          "type": "string",
+          "minLength": 5,
           "maxLength": 100
         }
       }
@@ -167,7 +359,7 @@
       "properties": {
         "uk_UA": {
           "type": "string",
-          "minLength": 15,
+          "minLength": 10,
           "maxLength": 120
         }
       }
@@ -177,7 +369,7 @@
       "properties": {
         "uk_UA": {
           "type": "string",
-          "minLength": 15,
+          "minLength": 10,
           "maxLength": 200
         }
       }
@@ -188,35 +380,19 @@
         "uk_UA": {
           "type": "string",
           "minLength": 10,
-          "maxLength": 100
-        },
-        "en_US": {
-          "type": "string",
-          "minLength": 5,
-          "maxLength": 40
+          "maxLength": 150
         }
       }
     },
-    "minNumberOfQualifiedBids": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 2
-    },
     "bankAccounts": {
       "type": "array",
-      "minItems": 4,
-      "maxItems": 4,
+      "minItems": 1,
+      "maxItems": 1,
       "items": {
         "type": "object",
         "properties": {
           "accountType": {
-            "type": "string",
-            "enum": [
-              "registrationFee",
-              "guarantee",
-              "other",
-              "payment"
-            ]
+            "const": "payment"
           },
           "accounts": {
             "type": "array",
@@ -286,10 +462,10 @@
                       "type": "object",
                       "properties": {
                         "id": {
-                          "example": "12312312"
+                          "example": "payment account"
                         },
                         "scheme": {
-                          "const": "UA-EDR"
+                          "const": "AE-ACCI"
                         },
                         "legalName": {
                           "type": "object",
@@ -309,10 +485,9 @@
             }
           }
         }
-      },
-      "uniqueBy": "accountType"
+      }
     },
-    "x_additionalInformation": {
+    "x_documentRequirements": {
       "type": "object",
       "properties": {
         "uk_UA": {
@@ -322,7 +497,7 @@
         }
       }
     },
-    "x_documentRequirements": {
+    "x_additionalInformation": {
       "type": "object",
       "properties": {
         "uk_UA": {
@@ -341,30 +516,19 @@
         "amount": {
           "type": "number",
           "minimum": 100,
-          "maximum": 500000
+          "maximum": 50000
         },
         "valueAddedTaxIncluded": {
-          "type": "boolean"
+          "const": false
         }
-      }
+      },
+      "required": [
+        "currency",
+        "amount"
+      ]
     },
-    "minimalPart": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 5
-    },
-    "minimalStep": {
-      "type": "object",
-      "properties": {
-        "currency": {
-          "const": "UAH"
-        },
-        "amount": {
-          "type": "number",
-          "minimum": 1,
-          "maximum": 1000
-        }
-      }
+    "valueAddedTaxCharged": {
+      "const": false
     },
     "guarantee": {
       "type": "object",
@@ -375,19 +539,6 @@
         "amount": {
           "type": "number",
           "minimum": 50,
-          "maximum": 50000
-        }
-      }
-    },
-    "registrationFee": {
-      "type": "object",
-      "properties": {
-        "currency": {
-          "const": "UAH"
-        },
-        "amount": {
-          "type": "number",
-          "minimum": 100,
           "maximum": 5000
         }
       }
@@ -402,7 +553,7 @@
     "items": {
       "type": "array",
       "minItems": 1,
-      "maxItems": 3,
+      "maxItems": 5,
       "items": {
         "type": "object",
         "properties": {
@@ -412,7 +563,7 @@
               "uk_UA": {
                 "type": "string",
                 "minLength": 20,
-                "maxLength": 150
+                "maxLength": 200
               },
               "en_US": {
                 "type": "string",
@@ -428,29 +579,22 @@
                 "const": "CAV"
               },
               "id": {
-                "example": "03000000-1"
+                "example": "04000000-8"
               }
             }
           },
-          "location": {
+          "unit": {
             "type": "object",
             "properties": {
-              "latitude": {
-                "type": "string",
-                "minLength": 5,
-                "maxLength": 12
-              },
-              "longitude": {
-                "type": "string",
-                "minLength": 5,
-                "maxLength": 12
-              },
-              "elevation": {
-                "type": "string",
-                "minLength": 3,
-                "maxLength": 12
+              "code": {
+                "const": "H87"
               }
             }
+          },
+          "quantity": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 5
           },
           "address": {
             "type": "object",
@@ -538,23 +682,113 @@
               }
             }
           },
-          "unit": {
+          "location": {
             "type": "object",
             "properties": {
-              "code": {
+              "latitude": {
                 "type": "string",
-                "enum": [
-                  "BX",
-                  "MTK",
-                  "H87"
-                ]
+                "minLength": 5,
+                "maxLength": 12
+              },
+              "longitude": {
+                "type": "string",
+                "minLength": 5,
+                "maxLength": 12
+              },
+              "elevation": {
+                "type": "string",
+                "minLength": 3,
+                "maxLength": 12
               }
             }
           },
-          "quantity": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 500
+          "itemProps": {
+            "type": "object",
+            "properties": {
+              "totalBuildingArea": {
+                "type": "number",
+                "minimum": 10,
+                "maximum": 5000
+              },
+              "totalObjectArea": {
+                "type": "number",
+                "minimum": 10,
+                "maximum": 20000
+              },
+              "usableArea": {
+                "type": "number",
+                "minimum": 10,
+                "maximum": 10000
+              },
+              "constructionYear": {
+                "type": "integer",
+                "minimum": 1950,
+                "maximum": 2025
+              },
+              "constructionTechnology": {
+                "type": "string",
+                "enum": [
+                  "monolithicFrame",
+                  "brick",
+                  "panel",
+                  "other"
+                ]
+              },
+              "livingArea": {
+                "type": "number",
+                "minimum": 5,
+                "maximum": 300
+              },
+              "kitchenArea": {
+                "type": "number",
+                "minimum": 3,
+                "maximum": 50
+              },
+              "landArea": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 500
+              },
+              "locationInBuilding": {
+                "type": "string",
+                "enum": [
+                  "attic",
+                  "basement",
+                  "groundFloor",
+                  "upperFloor"
+                ]
+              },
+              "floors": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2
+              },
+              "notLivingArea": {
+                "type": "number",
+                "minimum": 5,
+                "maximum": 5000
+              },
+              "numberOfRooms": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "numberOfStoreys": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 200
+              },
+              "utilityRoomsDescription": {
+                "type": "string",
+                "minLength": 10,
+                "maxLength": 100
+              },
+              "realEstateTenantsInfo": {
+                "type": "string",
+                "minLength": 10,
+                "maxLength": 150
+              }
+            }
           },
           "registrationDetails": {
             "type": "object",
@@ -587,8 +821,8 @@
     },
     "documents": {
       "type": "array",
-      "minItems": 2,
-      "maxItems": 3,
+      "minItems": 1,
+      "maxItems": 1,
       "items": {
         "type": "object",
         "properties": {
@@ -602,11 +836,6 @@
                 "type": "string",
                 "minLength": 5,
                 "maxLength": 60
-              },
-              "en_US": {
-                "type": "string",
-                "minLength": 5,
-                "maxLength": 40
               }
             }
           },
@@ -617,11 +846,6 @@
                 "type": "string",
                 "minLength": 5,
                 "maxLength": 60
-              },
-              "en_US": {
-                "type": "string",
-                "minLength": 5,
-                "maxLength": 40
               }
             }
           },
@@ -643,24 +867,13 @@
             ]
           },
           "documentType": {
-            "type": "string",
-            "enum": [
-              "notice",
-              "illustration",
-              "technicalSpecifications"
-            ]
+            "const": "illustration"
           }
         },
         "required": [
           "token",
           "title",
           "documentOf"
-        ]
-      },
-      "requireValues": {
-        "field": "documentType",
-        "values": [
-          "technicalSpecifications"
         ]
       }
     }
@@ -683,7 +896,8 @@
   "required": [
     "sellingMethod",
     "auctionPeriod",
-    "title",
+    "sellingEntity",
+    "debtorInformation",
     "value",
     "items"
   ]
